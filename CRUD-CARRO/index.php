@@ -95,15 +95,15 @@ $c = new Carro("carrosmodelos", "localhost", "root", "");
                             echo $res['nome'];
                         } ?>">
 
+            <label for="Modelo">Modelo</label>
+            <input type="text" name="modelo" id="modelo"
+                value="<?php if (isset($res)) {
+                            echo $res['modelo'];
+                        } ?>">
             <label for="ano">Ano</label>
             <input type="text" name="ano" id="ano"
                 value="<?php if (isset($res)) {
                             echo $res['ano'];
-                        } ?>">
-            <label for="modelo">Modelo</label>
-            <input type="text" name="modelo" id="modelo"
-                value="<?php if (isset($res)) {
-                            echo $res['modelo'];
                         } ?>">
 
             <label for="modelo">Marca</label>
@@ -123,8 +123,8 @@ $c = new Carro("carrosmodelos", "localhost", "root", "");
         <table>
             <tr id="titulo">
                 <td>NOME</td>
-                <td>ANO</td>
                 <td colspan="1">MODELO</td>
+                <td>ANO</td>
                 <td>MARCA</td>
             </tr>
 
